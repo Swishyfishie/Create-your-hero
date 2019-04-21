@@ -7,7 +7,7 @@ I made this app that when you write your prefered weapon or hero, it will displa
 
 `<input type="text" id="myHero" placeholder="Type of hero">` This is the input field
 
-`let firstLetter = document.getElementById("myWeapon").value[0];` This is how you select the first letter of the input value (whatever the user writes)
+`let firstLetter = document.getElementById("myHero").value[0];` This is how you select the first letter of the input value (whatever the user writes)
 
 Now, I came up with one solution for filtering vowels/consonants and for the second one I got help by someone on discord :D. 
  SOLUTION 1.
