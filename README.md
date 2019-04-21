@@ -5,7 +5,7 @@ I made this app that when you write your prefered weapon or hero, it will displa
 
 **I've done it like this: 
 
-**"<input type="text" id="myHero" placeholder="Type of hero">" This is the input field
+**`<input type="text" id="myHero" placeholder="Type of hero">` This is the input field
 
 
   
