@@ -32,3 +32,6 @@ and the DOM manipulation :
   I know this is simple but I came up with it alone so I'm happy as it's my first time to do it.
   
   
+  ## update 1
+  
+  I did change the capitalized vowels with toLowerCase method, did separate files and started styling the form with bootstrap.
