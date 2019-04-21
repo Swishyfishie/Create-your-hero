@@ -1,54 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
 <body>
+  <div class="form">
+    <input type="text" id="myHero" placeholder="Type of hero">
+    <input type="text" id="myArmor" placeholder="Type of armor">
+    <input type="text" id="myWeapon" placeholder="Type of Weapon">
+    
+    
+      <button type="button" class="btn btn-primary" id="createCharacter">Create your hero!</button>
+    
 
+  </div>
+  <div class="results">
+    <p id="hero"></p>
+    <p id="armor"></p>
+    <p id="weapon"></p>
+  </div>  
 
-
-<input type="text" id="myHero" placeholder="Type of hero"><Br><br>
-<input type="text" id="myArmor" placeholder="Type of armor"><br><br>
-<input type="text" id="myWeapon" placeholder="Type of Weapon"><br><br>
-
-
-<button onclick="myFunction()">Click</button>
-
-<p id="hero"></p>
-<p id="armor"></p>
-<p id="weapon"></p>
-
-<script>
-function myFunction() {
-
-  let firstLetter = document.getElementById("myWeapon").value[0];
-  let firstLetterH = document.getElementById("myHero").value[0];
-  
-  //This is the first method that works
-  // let prep = firstLetter == "a" || firstLetter =="e" || firstLetter == "i" || firstLetter=="o" || firstLetter =="u" ? 'an':'a';  
-  
-  //this is the second easier method
-   const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']; 
-  let prep = vowels.includes(firstLetter) ? 'an' : 'a';
-  let prepH = vowels.includes(firstLetterH) ? 'an' : 'a';
-
-
-  let hero = document.getElementById("myHero").value;
-  document.getElementById("hero").innerHTML = `Your hero is ${prepH} ${hero}`;
-  document.getElementById("myHero").value = '';
-  
-  let armor = document.getElementById("myArmor").value;
-  document.getElementById("armor").innerHTML = `Your type of armor is ${armor}`;
-  document.getElementById("myArmor").value = '';
-  
-  let weapon = document.getElementById("myWeapon").value;
-  document.getElementById("weapon").innerHTML = `Your Weapon is ${prep} ${weapon}`;
-  document.getElementById("myWeapon").value = '';
-  
-
-  
-}
-
-
-
-</script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
