@@ -22,7 +22,9 @@ Now, I came up with one solution for filtering vowels/consonants and for the sec
 and the DOM manipulation : 
 
  ` let hero = document.getElementById("myHero").value;
+ 
   document.getElementById("hero").innerHTML = ``Your hero is ${prepH} ${hero}``;
+  
   document.getElementById("myHero").value = '';`
   
   You can check the code :D 
